@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <!-- Open-Iconic icons -->
+    <link href="./open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Loved+by+the+King|Lovers+Quarrel|Open+Sans|Fjalla+One" rel="stylesheet">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+        .title_container {
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            display: block;
+            position: absolute;
+            max-width: 225px;
+        }
+
+        .button {
+            float: left;
+            position: relative;
+            bottom: -65px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-10deg);
+            color: #e55643;
+            text-transform: uppercase;
+            opacity: 0;
+            visibility: hidden;
+            cursor: pointer;
+        }
+
+        .button span {
+            transform: skew(-10deg);
+            display: block;
+            float: left;
+            text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px;
+        }
+
+        h1 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 42px;
+            margin: 0;
+            line-height: 47px;
+            letter-spacing: 2px;
+        }
+
+        .retro_title {
+            transform: translateX(-50%) rotate(-10deg);
+            display: block;
+            float: left;
+            left: 50%;
+            position: relative;
+        }
+
+        .retro_title span {
+            transform: skew(-10deg);
+            display: block;
+            float: left;
+            text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px, #533d4a 5px 5px, #533d4a 6px 6px;
+            min-width: 10px;
+            min-height: 10px;
+            position: relative;
+        }
+
+        .retro_title:nth-child(1) {
+            color: #e55643;
+        }
+
+        .retro_title:nth-child(2) {
+            color: #2b9f5e;
+        }
+
+        .retro_title:nth-child(3) {
+            color: #f1c83c;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="title_container">
+        <h1>
+            <span class="retro_title">Jazz Attack</span>
+            <span class="retro_title">Lindy Hopping</span>
+            <span class="retro_title">stuff</span>
+        </h1>
+<!--        <div class="button">restart</div>-->
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".retro_title").lettering();
+            $(".button").lettering();
+        });
+
+
+
+
+
+        $(document).ready(function() {
+            animation();
+        }, 1000);
+
+        $('.button').click(function() {
+            animation();
+        });
+
+
+        function animation() {
+            var tMaxOptions {
+                onComplete: function() {
+                    
+                },
+                onStart: function() {
+                    
+                }
+            }
+            var title1 = new TimelineMax(tMaxOptions);
+            title1.staggerFromTo(".retro_title span", 0.5, {
+                ease: Back.easeOut.config(1.7),
+                opacity: 0,
+                bottom: -80
+            }, {
+                ease: Back.easeOut.config(1.7),
+                opacity: 1,
+                bottom: 0
+            }, 0.05);
+        }
+
+    </script>
+</body>
