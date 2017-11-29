@@ -35,3 +35,7 @@ function animation() {
     }, 0.05);
 
 }
+
+$('.bio_button').click(function () {
+  $(this).parent().toggleClass('expand');     
+});
