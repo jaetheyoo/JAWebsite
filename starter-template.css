@@ -197,11 +197,11 @@ h1 {
     height: 200px;
     border-radius: 50%;
     background: url(res/ErinProf.jpg) center center /cover;
-    
 }
 
-.bio_container {
+
 /*
+.bio_container {
   position: absolute;
   margin: auto;
   left: 0;
@@ -210,7 +210,6 @@ h1 {
   background-color: #03A9F4;
   border-radius: 50%;
   width: 60px;
-*/
   max-width: 500px;
   height: 300px;
   text-align: center;
@@ -219,63 +218,47 @@ h1 {
   -webkit-transition: all 0.2s 0.45s, height 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.25s, max-width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.35s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.35s;
   transition: all 0.2s 0.45s, height 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.25s, max-width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.35s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.35s;
 }
+*/
+.flush_right {
+    padding-right:0px;
+    margin-right:0px;
+}
+.bio_description_container{
+    margin-left: 3.125rem
+    height: 280px;
+    
+    position: relative;
+    right: 0px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
 
-.bio_container.expand {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.17);
-  border-radius: 0;
-  width: 80%;
-  height: 500px;
-  max-width: 600px;
-  padding: 0;
-  -webkit-transition: all 0.2s, max-width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s, height 0.3s ease 0.25s;
-  transition: all 0.2s, max-width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s, height 0.3s ease 0.25s;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
 }
 
-.bio_content {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  text-align: left;
-  -webkit-transition: opacity 0.2s 0.2s, -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 0.2s 0.2s, -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s 0.2s;
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s 0.2s, -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+.bio_content_picture {
+    padding:10px;
+
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 1001;
+    border: 30px solid;
+    border-color:dodgerblue;
 }
 
-.expand .bio_content {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  opacity: 1;
-  -webkit-transition: opacity 0s, -webkit-transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
-  transition: opacity 0s, -webkit-transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
-  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.05s, opacity 0s;
-  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.05s, opacity 0s, -webkit-transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
-}
-
-.bio_content .bio_head {
-  padding: 0 0 20px 0;
-}
-
-.bio_content .bio_body {
-  color: #000;
-  color: rgba(0, 0, 0, 0.87);
-  background-color: #FFF;
-  width: 100%;
-  height: 100%;
-  padding: 10px 0;
-  box-sizing: border-box;
-}
-
-.action-bar {
-  padding-left: 15px;
-  border-top: 1px solid #E0E0E0;
-  width: 100%;
-}
-
-.action-bar a {
-  text-transform: uppercase;
-  line-height: 52px;
-  color: #FFC400;
+.bio_content_description {
+    z-index: 1000;
+    left:140px;
+    height: 280px;
+    right:0px;
+    position:absolute;
+    background-color: dodgerblue
 }
