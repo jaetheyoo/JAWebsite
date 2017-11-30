@@ -219,14 +219,17 @@ h1 {
   transition: all 0.2s 0.45s, height 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.25s, max-width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.35s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.35s;
 }
 */
+
 .flush_right {
-    padding-right:0px;
-    margin-right:0px;
+    padding-right: 0px;
+    margin-right: 0px;
 }
-.bio_description_container{
-    margin-left: 3.125rem
+
+.bio_description_container {
+    margin-left: 8rem;
+    margin-bottom: 2rem;
     height: 280px;
-    
+
     position: relative;
     right: 0px;
     display: -ms-flexbox;
@@ -236,29 +239,56 @@ h1 {
     min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
-
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .25rem;
 }
 
-.bio_content_picture {
-    padding:10px;
-
-    height: 280px;
-    width: 280px;
+.bio_description_container > .bio_content_picture_container {
+    height: 17.5rem;
+    width: 17.5rem;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: aliceblue;
     z-index: 1001;
-    border: 30px solid;
-    border-color:dodgerblue;
+    display: flex;
+    justify-content: center;
+    border: solid 1.5rem dodgerblue;
 }
 
-.bio_content_description {
+.bio_content_picture_container > .bio_content_picture {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    margin: 10px;
+    z-index: 1001;
+    margin: auto;
+    box-shadow: 5px 8px 8px -4px rgba(25, 24, 23, 0.21);
+}
+
+.bio_description_container > .bio_content_description {
+    padding-left: 9.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
     z-index: 1000;
-    left:140px;
+    left: 140px;
     height: 280px;
-    right:0px;
-    position:absolute;
-    background-color: dodgerblue
+    right: 0px;
+    position: absolute;
+    background-color: dodgerblue;
+}
+
+.bio_content_description > .bio_content_description_name {
+    color: #FFF;
+}
+
+.bio_content_description > .bio_content_description_position {
+    color: gold;
+}
+
+.bio_content_description > .bio_content_description_bio {
+    height: 10rem;
+    color: #fff;
+    overflow-y: auto;
+}
+
+.bio_images_container {
+    background-color: red;
 }
