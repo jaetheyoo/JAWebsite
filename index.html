@@ -18,12 +18,15 @@
     <link href="./open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Loved+by+the+King|Lovers+Quarrel|Open+Sans|Fjalla+One" rel="stylesheet">
-
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        <!-- Animations -->
+    <link rel="stylesheet" href="./res/hand-drawn/font/flaticon.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Jazz Attack</a>
+        <a class="navbar-brand" href="#"><Strong>Jazz Attack</Strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,6 +35,7 @@
             <ul class="navbar-nav mr-auto slide_bar_container">
                 <li class="nav-item active slide_bar ">
                     <a class="nav-link slide_bar_anchor" href="#" id="About">
+<!--                        <img src="./res/hand-drawn/svg/add-suitcase-hand-drawn-symbol.svg" class="slide_bar_icon" title="icon name" aria-hidden="true">-->
                         <span class="oi oi-info slide_bar_icon" title="icon name" aria-hidden="true"></span>
                         <span class="slide_bar_description">About</span>
                     </a>
@@ -95,81 +99,41 @@
     <section class="title_container">
         <h1>
             <span class="retro_title">Jazz Attack</span>
-            <span class="retro_title">Lindy Hopping</span>
-            <span class="retro_title">stuff</span>
+            <span class="retro_title">Philly Swing Dance</span>
+            <span class="retro_title">Every Thursday 7-11</span>
+                        <span class="retro_title">Cambridge Art Hall</span>
+
         </h1>
         <!--        <div class="button">restart</div>-->
     </section>
     <!--        Start EBoard Component      -->
     <div class="container-fluid">
-        <div class="bio_description_container" id="">
+        <div class="bio_description_container">
             <div class="bio_content_picture_container">
-                <img class="bio_content_picture" src="res/ErinProf.jpg" alt="Profile Picture">
+                <img class="bio_content_picture" src="res/JALogo.png" alt="Profile Picture">
 
             </div>
             <div class="bio_content_description">
-                <h2 class="bio_content_description_name">Erin Stuff</h2>
-                <h3 class="bio_content_description_position">Treasurer</h3>
+                <h2 class="bio_content_description_name">Meet the Organizers</h2>
+                <h3 class="bio_content_description_position">Ask us to dance!</h3>
                 <p class="bio_content_description_bio">
-Erin delights in getting you involved in making the Jazz Attack magic happen every week. When dancing, it’s hard to find her without the biggest smile across her face, and she wants that to happen for you too! When off the dance floor, you might find her breaking glass with operatic high notes or cultivating more amazing musicians. Erin is always down for a music jam and willing to volunteer some jazz vocals- her happy place is where dancing and live music meet.
-</p>
+                    Jazz attack can operate at full steam thanks to the wonderful volunteers below. <br><br>Click a profile to learn more about each organizer: their names, their positions, and their super powers! 
+                    </p>
             </div>
         </div>
-        <div class="row bio_images_container">
-            <div class="col">
-                <div class="bio_container">
-                    <h2>Person</h2>
-                    <button class="btn btn-default bio_button">
-                    </button>
-                    <div class="bio_content">
-                        <div class="bio_head">
-                            <h2 class="bio_properName">Proper Name</h2>
-                            <p class="bio_properPosition">Proper Position</p>
-                        </div>
-                        <div class="bio_body">
-                            <p>
-                                Erin delights in getting you involved in making the Jazz Attack magic happen every week. When dancing, it’s hard to find her without the biggest smile across her face, and she wants that to happen for you too! When off the dance floor, you might find her breaking glass with operatic high notes or cultivating more amazing musicians. Erin is always down for a music jam and willing to volunteer some jazz vocals- her happy place is where dancing and live music meet.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="bio_container">
-                    <h2>Person</h2>
-                    <button class="btn btn-default bio_button">
-                    </button>
-                </div>
-            </div>
-            <div class="col">
-                <div class="bio_container">
-                    <h2>Person</h2>
-                    <button class="btn btn-default bio_button">
-                    </button>
-                </div>
-            </div>
-            <div class="col">
-                <div class="bio_container">
-                    <h2>Person</h2>
-                    <button class="btn btn-default bio_button">
-                    </button>
-                </div>
-            </div>
-            <div class="col">
-                <div class="bio_container">
-                    <h2>Person</h2>
-                    <button class="btn btn-default bio_button">
-                    </button>
-                </div>
-            </div>
-            <div class="col">
-                <div class="bio_container">
-                    <h2>Person</h2>
-                    <button class="btn btn-default bio_button">
-                    </button>
-                </div>
+
+        <div class="row bio_cards_container d-flex justify-content-start">
+            <div class="col bio_container animated">
+                <button class="bio_button">
+                    <img class="bio_image" src="res/profiles/ErinA.jpg" alt="Profile Picture" onclick="bioSwapEventHandler(this)">
+                    <p class="bio_title"><strong>Literally Sunshine</strong></p>
+                    <p class="hidden_information_description"></p> 
+                    <p class="hidden_information_position"></p> 
+                    <p class="hidden_information_name"></p> 
+                </button>
             </div>
         </div>
+
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -180,6 +144,7 @@ Erin delights in getting you involved in making the Jazz Attack magic happen eve
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="data.js"></script>
     <script src="script.js"></script>
 
 </body>

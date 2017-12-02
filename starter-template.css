@@ -40,6 +40,7 @@ body {
 }
 
 @media (min-width: 768px) {
+
     .container-fluid {
         margin-top: 40px;
     }
@@ -100,6 +101,7 @@ body {
         flex: auto;
         /*    overflow: hidden;*/
     }
+
     .slide_bar {
         -webkit-transform: skew(30deg);
         transform: skew(30deg); //background-color: aquamarine
@@ -107,7 +109,11 @@ body {
     .slide_bar .slide_bar_icon {
         -webkit-transform: skew(-30deg);
         transform: skew(-30deg);
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: white;
     }
+
     .slide_bar_container li:first-child {
         margin-left: -20px;
     }
@@ -124,8 +130,20 @@ body {
     }
     .navbar-brand {
         margin-right: 0rem;
-        padding-right: 3rem;
-        padding-left: 3rem;
+        padding-right: 3.2rem;
+        padding-left: 2rem;
+        background-color: var(--JATiffanyBlue);
+        border: .1rem solid var(--JATiffanyBlue);
+    }
+
+    .slide_bar:nth-child(3n+0) {
+        background-color: #2274A5;
+    }
+    .slide_bar:nth-child(3n+1) {
+        background-color: var(--JABoldInfraRed);
+    }
+    .slide_bar:nth-child(3n+2) {
+        background-color: var(--JATiffanyBlue);
     }
 }
 
@@ -141,7 +159,7 @@ h1 {
 h1 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 42px;
+    /*    font-size: 42px;*/
     margin: 0;
     line-height: 47px;
     letter-spacing: 2px;
@@ -153,7 +171,7 @@ h1 {
     left: 50%;
     display: block;
     position: absolute;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .retro_title {
@@ -176,28 +194,27 @@ h1 {
 
 .retro_title:nth-child(1) {
     color: var(--JATitle);
+    font-size: 84px;
+    line-height: 90px;
 }
 
 .retro_title:nth-child(2) {
     color: var(--JASubtitle);
+    font-size: 47px;
+    line-height: 58px;
 }
 
 .retro_title:nth-child(3) {
     color: var(--JAInformation);
+    font-size: 44px;
+    line-height: 55px;
+}
+.retro_title:nth-child(4) {
+    color: var(--JAInformation);
+    font-size: 47px;
+    line-height: 59px;
 }
 
-.bio_container {
-    background-color: antiquewhite;
-}
-
-.bio_button {
-    cursor: pointer;
-    border: 25px solid green;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: url(res/ErinProf.jpg) center center /cover;
-}
 
 
 /*
@@ -250,6 +267,7 @@ h1 {
     display: flex;
     justify-content: center;
     border: solid 1.5rem dodgerblue;
+    transition: all 0.2s ease;
 }
 
 .bio_content_picture_container > .bio_content_picture {
@@ -263,6 +281,8 @@ h1 {
 }
 
 .bio_description_container > .bio_content_description {
+    transition: all 0.2s ease;
+
     padding-left: 9.25rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -289,6 +309,83 @@ h1 {
     overflow-y: auto;
 }
 
-.bio_images_container {
-    background-color: red;
+.bio_cards_container {
+    margin: 2rem 0rem 0rem 0rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-bottom: 2rem;
+}
+
+.bio_container {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio_button {
+    padding: 0px;
+    cursor: pointer;
+    border: 1rem solid dodgerblue;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bio_button:hover {
+    filter: brightness(85%);
+}
+
+.bio_image {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    box-shadow: 5px 8px 8px -4px rgba(25, 24, 23, 0.21);
+}
+
+.bio_title {
+    flex: auto;
+    color: dodgerblue;
+    text-align: center;
+    font-size: larger;
+    padding: .2rem .5rem;
+    position: absolute;
+    margin-top: 9rem;
+    background-color: white;
+    box-shadow: 6px 6px 15px -3px rgba(25, 24, 23, 0.21);
+    border-radius: .25rem;
+    border: 1px solid #ddd;
+    width: intrinsic;
+    /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;
+    /* Firefox/Gecko */
+    width: -webkit-max-content;
+    /* Chrome */
+}
+
+/*
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track:horizontal {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb:horizontal {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background-color: var(--JATiffanyBlue)
+}*/
+
+.hidden_information_description,
+.hidden_information_position,
+.hidden_information_name {
+    display: none;
 }
