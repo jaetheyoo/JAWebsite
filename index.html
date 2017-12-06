@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Jaewoong Yoo">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Jazz Attack Philly Swing Dance</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -20,8 +20,11 @@
     <link href="https://fonts.googleapis.com/css?family=Loved+by+the+King|Lovers+Quarrel|Open+Sans|Fjalla+One" rel="stylesheet">
     <!-- Animations -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-        <!-- Animations -->
+    <!-- Animations -->
     <link rel="stylesheet" href="./res/hand-drawn/font/flaticon.css">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css" />
+
 </head>
 
 <body>
@@ -35,45 +38,36 @@
             <ul class="navbar-nav mr-auto slide_bar_container">
                 <li class="nav-item active slide_bar ">
                     <a class="nav-link slide_bar_anchor" href="#" id="About">
-<!--                        <img src="./res/hand-drawn/svg/add-suitcase-hand-drawn-symbol.svg" class="slide_bar_icon" title="icon name" aria-hidden="true">-->
                         <span class="oi oi-info slide_bar_icon" title="icon name" aria-hidden="true"></span>
                         <span class="slide_bar_description">About</span>
                     </a>
                 </li>
                 <li class="nav-item slide_bar ">
-                    <a class="nav-link slide_bar_anchor" href="#" id="About">
+                    <a class="nav-link slide_bar_anchor" href="#" id="Calendar">
                         <span class="oi oi-calendar slide_bar_icon" title="icon name" aria-hidden="true"></span>
                         <span class="slide_bar_description">Calendar</span>
                     </a>
                 </li>
                 <li class="nav-item slide_bar ">
-                    <a class="nav-link slide_bar_anchor" href="#" id="Classes">
+                    <a class="nav-link slide_bar_anchor" href="#" id="MeetTheOrganizersses">
                         <span class="oi oi-people slide_bar_icon" title="icon name" aria-hidden="true"></span>
                         <span class="slide_bar_description">Meet the Organizers</span>
                     </a>
                 </li>
                 <li class="nav-item slide_bar ">
-                    <a class="nav-link slide_bar_anchor" href="#" id="Meet the Organizers">
+                    <a class="nav-link slide_bar_anchor" href="#" id="Classes">
                         <span class="oi oi-book slide_bar_icon" title="icon name" aria-hidden="true"></span>
                         <span class="slide_bar_description">Classes</span>
                     </a>
                 </li>
-                <!--
                 <li class="nav-item slide_bar ">
-                    <a class="nav-link slide_bar_anchor" href="#" id="Funky Town">
-                        <span class="oi oi-wrench slide_bar_icon" title="icon name" aria-hidden="true"></span>
-                        <span class="slide_bar_description">Private Lessons</span>                    
-                    </a>
-                </li>
--->
-                <li class="nav-item slide_bar ">
-                    <a class="nav-link slide_bar_anchor" href="#" id="About">
+                    <a class="nav-link slide_bar_anchor" href="#" id="SafeSpaces">
                         <span class="oi oi-heart slide_bar_icon" title="icon name" aria-hidden="true"></span>
                         <span class="slide_bar_description">Safe Spaces</span>
                     </a>
                 </li>
                 <li class="nav-item slide_bar">
-                    <a class="nav-link slide_bar_anchor" href="#" id="About">
+                    <a class="nav-link slide_bar_anchor" href="#" id="SwingDanecHistory">
                         <span class="oi oi-globe slide_bar_icon" title="icon name" aria-hidden="true"></span>
                         <span class="slide_bar_description">Swing Dance History</span>
                     </a>
@@ -101,7 +95,7 @@
             <span class="retro_title">Jazz Attack</span>
             <span class="retro_title">Philly Swing Dance</span>
             <span class="retro_title">Every Thursday 7-11</span>
-                        <span class="retro_title">Cambridge Art Hall</span>
+            <span class="retro_title">Cambridge Art Hall</span>
 
         </h1>
         <!--        <div class="button">restart</div>-->
@@ -110,15 +104,15 @@
     <div class="container-fluid">
         <div class="bio_description_container">
             <div class="bio_content_picture_container">
-                <img class="bio_content_picture" src="res/JALogo.png" alt="Profile Picture">
+                <img class="bio_content_picture animated" src="res/JALogo.png" alt="Profile Picture">
 
             </div>
             <div class="bio_content_description">
                 <h2 class="bio_content_description_name">Meet the Organizers</h2>
                 <h3 class="bio_content_description_position">Ask us to dance!</h3>
                 <p class="bio_content_description_bio">
-                    Jazz attack can operate at full steam thanks to the wonderful volunteers below. <br><br>Click a profile to learn more about each organizer: their names, their positions, and their super powers! 
-                    </p>
+                    Jazz attack can operate at full steam thanks to the wonderful volunteers below. <br><br>Click a profile to learn more about each organizer: their names, their positions, and their super powers!
+                </p>
             </div>
         </div>
 
@@ -144,6 +138,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
     <script src="data.js"></script>
     <script src="script.js"></script>
 
