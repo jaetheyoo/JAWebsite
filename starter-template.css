@@ -419,3 +419,20 @@ h1 {
 .hidden_information_name {
     display: none;
 }
+
+.general_info {
+    padding: 3rem .5rem 2rem .5rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: deepskyblue;
+}
+
+.general_info_icon {
+    text-align:center;
+    font-size: xx-large;
+}
+
+.general_info_text {
+    text-align:center;
+}
