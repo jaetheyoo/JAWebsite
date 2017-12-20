@@ -41,14 +41,14 @@ body {
     .navbar {
         padding: 0px;
     }
-    
+
     .navbar-brand {
         margin-right: 0rem;
         padding-right: 3.2rem;
         padding-left: 2rem;
         background-color: var(--JATiffanyBlue);
     }
-    
+
     .page_scrolled.navbar > .navbar-brand {
         font-size: inherit;
         padding-top: .27rem;
@@ -58,14 +58,14 @@ body {
     .slide_bar_container {
         flex: auto;
     }
-    
+
     .slide_bar_container li:first-child {
         margin-left: -20px;
     }
     .slide_bar_container li:last-child {
         margin-right: -20px;
     }
-    
+
     .slide_bar {
         border-left: 1px solid #eee;
         flex-grow: 1;
@@ -96,7 +96,7 @@ body {
     .slide_bar:hover {
         filter: grayscale(0%) saturate(100%);
     }
-    
+
     .slide_bar:hover .slide_bar_description,
     .slide_bar:hover .slide_bar_icon {
         font-size: inherit;
@@ -109,31 +109,31 @@ body {
         -o-animation: fadeIn .2s forwards;
         animation: fadeIn .2s forwards;
     }
-    
+
     .slide_bar a {
         text-align: center;
     }
-    
+
     .page_scrolled .slide_bar_anchor {
         padding: .1875rem 0px;
     }
-        
+
     .slide_bar .slide_bar_icon {
         width: 1.5rem;
         height: 1.5rem;
         fill: white;
-        display:none;
+        display: none;
 
         -webkit-transform: skew(-30deg);
         transform: skew(-30deg);
         -webkit-transition: color .3s ease-in;
         transition: color .3s ease-in;
     }
-        
+
     .page_scrolled .slide_bar_icon {
         display: inline-block;
     }
-    
+
     .slide_bar_description {
         display: inline-flex;
         -webkit-transform: skew(-30deg);
@@ -144,7 +144,7 @@ body {
         font-size: 0px;
         opacity: 0;
     }
-    
+
     @-webkit-keyframes fadeIn {
         50% {
             opacity: 0;
@@ -420,19 +420,22 @@ h1 {
     display: none;
 }
 
-.general_info {
-    padding: 3rem .5rem 2rem .5rem;
+.general_info_container {
+    /*    padding: 3rem .5rem 2rem .5rem;*/
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    background-color: deepskyblue;
+    /*    background-color: deepskyblue;*/
 }
 
 .general_info_icon {
-    text-align:center;
+    font-weight: bolder;
+    text-align: center;
     font-size: xx-large;
+    color: var(--JAPeachOrange);
+    text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px;
 }
 
 .general_info_text {
-    text-align:center;
+    text-align: center;
 }
