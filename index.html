@@ -78,24 +78,27 @@
     </nav>
     <main role="main" class="container-fluid">
         <div>
-            <img src="./res/JABanner_cropped_lower_desat1.jpg" class="img-fluid" alt="JA Logo">
-
-
-
+            <img src="./res/JABanner_cropped_lower_desat1.jpg" class="img-fluid background_parallax" alt="JA Logo">
         </div>
     </main>
-    <section class="title_container">
-        <h1>
-            <span class="retro_title">Jazz Attack</span>
-            <span class="retro_title">Philly Swing Dance</span>
-            <span class="retro_title">Every Thursday 7-11</span>
-            <span class="retro_title">Cambridge Art Hall</span>
-        </h1>
-    </section>
     <section>
-        <div class="container">
+        <div class="title_container">
+            <h1>
+                <span class="retro_title">Jazz Attack</span>
+                <span class="retro_title">Philly Swing Dance</span>
+                <span class="retro_title">Every Thursday 7-11</span>
+                <span class="retro_title">Cambridge Arts Hall</span>
+            </h1>
+        </div>
+        <div class="_clear">
+
+        </div>
+    </section>
+    <!--        Start General Info Component      -->
+    <section class="bg-white">
+        <div class="container general_info_container">
             <div class="row">
-                <div class="col general_info">
+                <div class="col col-sm-6 col-md col-12 general_info">
                     <div class="general_info_icon">
                         <!--                        <span class="oi oi-dollar" title="icon name" aria-hidden="true"></span>-->
                         <span>$7</span>
@@ -104,7 +107,7 @@
                         <p>Lessons &amp; Dance</p>
                     </div>
                 </div>
-                <div class="col general_info">
+                <div class="col col-sm-6 col-md col-12 general_info">
                     <div class="general_info_icon">
                         <span class="oi oi-clock" title="icon name" aria-hidden="true"></span>
                     </div>
@@ -113,7 +116,7 @@
                         <p>7-8 PM</p>
                     </div>
                 </div>
-                <div class="col general_info">
+                <div class="col col-sm-6 col-md col-12 general_info">
                     <div class="general_info_icon">
                         <span class="oi oi-musical-note" title="icon name" aria-hidden="true"></span>
                     </div>
@@ -122,65 +125,79 @@
                         <p>8-11 PM</p>
                     </div>
                 </div>
-                <div class="col general_info">
+                <div class="col col-sm-6 col-md col-12 general_info">
                     <div class="general_info_icon">
                         <span class="oi oi-map-marker" title="icon name" aria-hidden="true"></span>
                     </div>
                     <div class="general_info_text">
-                        <span>Cambrige Art Hall</span>
+                        <span>Cambrige Arts Hall</span>
                         <p>1524 Cambridge St,<br>Philadelphia, PA 19130</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <h2>
-            Welcome to a Lindy Hop Community where dancing and laughing go hand-in-hand
-        </h2>
-        <p>
-            Jazz Attack is run entirely by volunteers, who love to share their passion for swing dancing. We hold weekly dances on Thursday at the newly renovated Cambridge Art Hall. In addition to the social dances, we teach both beginner and intermediate swing dancing lessons (at no additional cost, mind you!).
-
-
-        </p>
-        <h3>Never Danced Before?</h3>
-        <p>Check out the <button>FAQ</button> for what to expect on your first night</p>
-        <h3>Not your first rodeo?</h3>
-        <p>We'd love to have you join our community! Want to brush up on your lindy hopping or learn a new move? We have <button>Classes</button> for first-time Lindy Hoppers and those with years of experience.</p>
-    </section>
-    <section>
-        <h2>FAQ</h2>
-    </section>
-    <!--        Start EBoard Component      -->
-    <div class="container-fluid">
-        <div class="bio_description_container">
-            <div class="bio_content_picture_container">
-                <img class="bio_content_picture animated" src="res/JALogo.png" alt="Profile Picture">
-
+    <!--        Start About Component      -->
+    <section class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col about_header">
+                    <h2>
+                        ABOUT JAZZ ATTACK
+                    </h2>
+                </div>
             </div>
-            <div class="bio_content_description">
-                <h2 class="bio_content_description_name">Meet the Organizers</h2>
-                <h3 class="bio_content_description_position">Ask us to dance!</h3>
-                <p class="bio_content_description_bio">
-                    Jazz attack can operate at full steam thanks to the wonderful volunteers below. <br><br>Click a profile to learn more about each organizer: their names, their positions, and their super powers!
-                </p>
+            <div class="row">
+                <div class="col about_content">
+                    <p>
+                        Jazz Attack is run entirely by volunteers, who love to share their passion for swing dancing. We hold weekly dances on Thursday at the newly renovated Cambridge Arts Hall. In addition to the social dances, we teach both beginner and intermediate swing dancing lessons (at no additional cost, mind you!).
+                    </p>
+                    <h3>Never Danced Before?</h3>
+                    <p>Check out the <button>FAQ</button> for what to expect on your first night</p>
+                    <h3>Not your first rodeo?</h3>
+                    <p>We'd love to have you join our community! Want to brush up on your lindy hopping or learn a new move? We have <button>Classes</button> for first-time Lindy Hoppers and those with years of experience.</p>
+                </div>
+                <div class="col about_image"></div>
             </div>
         </div>
 
-        <div class="row bio_cards_container d-flex justify-content-start">
-            <div class="col bio_container animated">
-                <button class="bio_button">
+
+    </section>
+    <section class="bg-white">
+        <h2>FAQ</h2>
+    </section>
+    <!--        Start EBoard Component      -->
+
+    <section class="bg-white">
+        <div class="container-fluid margin_fix">
+            <div class="bio_description_container">
+                <div class="bio_content_picture_container">
+                    <img class="bio_content_picture animated" src="res/JALogo.png" alt="Profile Picture">
+
+                </div>
+                <div class="bio_content_description">
+                    <h2 class="bio_content_description_name">Meet the Organizers</h2>
+                    <h3 class="bio_content_description_position">Ask us to dance!</h3>
+                    <p class="bio_content_description_bio">
+                        Jazz attack can operate at full steam thanks to the wonderful volunteers below. <br><br>Click a profile to learn more about each organizer: their names, their positions, and their super powers!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row bio_cards_container d-flex justify-content-start">
+                <div class="col bio_container animated">
+                    <button class="bio_button">
                     <img class="bio_image" src="res/profiles/ErinA.jpg" alt="Profile Picture" onclick="bioSwapEventHandler(this)">
                     <p class="bio_title"><strong>Literally Sunshine</strong></p>
                     <p class="hidden_information_description"></p> 
                     <p class="hidden_information_position"></p> 
                     <p class="hidden_information_name"></p> 
                 </button>
+                </div>
             </div>
+
         </div>
-
-    </div>
-
+    </section>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

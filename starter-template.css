@@ -22,7 +22,7 @@ body {
 }
 
 .container-fluid {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     padding: 0px;
 }
 
@@ -73,12 +73,6 @@ body {
         transform: skew(30deg);
     }
 
-    .slide_bar,
-    .slide_bar_description {
-        -webkit-transition: font-size .2s ease-in, color .3s ease-in, filter .2s ease-in;
-        transition: font-size .2s ease-in, color .3s ease-in, filter .2s ease-in;
-    }
-
     .slide_bar:not(.active) {
         filter: grayscale(60%) saturate(60%);
     }
@@ -99,6 +93,8 @@ body {
 
     .slide_bar:hover .slide_bar_description,
     .slide_bar:hover .slide_bar_icon {
+        -webkit-transition: font-size .2s ease-in, color .3s ease-in, filter .2s ease-in;
+        transition: font-size .2s ease-in, color .3s ease-in, filter .2s ease-in;
         font-size: inherit;
         color: #fff;
     }
@@ -179,6 +175,11 @@ body {
     }
 }
 
+.background_parallax {
+    position: fixed;
+    z-index: -1;
+}
+
 h1 {
     font-family: 'Fjalla One', sans-serif;
     color: #fff;
@@ -196,6 +197,10 @@ h1 {
     display: block;
     position: absolute;
     max-width: 450px;
+}
+
+._clear {
+    height:580px;
 }
 
 .retro_title {
@@ -421,11 +426,12 @@ h1 {
 }
 
 .general_info_container {
-    /*    padding: 3rem .5rem 2rem .5rem;*/
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    /*    background-color: deepskyblue;*/
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.general_info {
+    padding-bottom: .5rem;
 }
 
 .general_info_icon {
@@ -438,4 +444,8 @@ h1 {
 
 .general_info_text {
     text-align: center;
+}
+
+.bg_white {
+    background-color: white;
 }
