@@ -91,10 +91,13 @@ body {
         filter: grayscale(0%) saturate(100%);
     }
 
-    .slide_bar:hover .slide_bar_description,
-    .slide_bar:hover .slide_bar_icon {
+    .page_scrolled .slide_bar_description {
         -webkit-transition: font-size .2s ease-in, color .3s ease-in, filter .2s ease-in;
         transition: font-size .2s ease-in, color .3s ease-in, filter .2s ease-in;
+    }
+
+    .slide_bar:hover .slide_bar_description,
+    .slide_bar:hover .slide_bar_icon {
         font-size: inherit;
         color: #fff;
     }
@@ -200,7 +203,7 @@ h1 {
 }
 
 ._clear {
-    height:580px;
+    height: 580px;
 }
 
 .retro_title {
@@ -448,4 +451,73 @@ h1 {
 
 .bg_white {
     background-color: white;
+}
+
+.header_centered {
+    text-align: center;
+}
+
+.about_content_description {
+    text-align: center;
+}
+
+.FAQ_question::before {
+    content: "Q: ";
+    font-weight: bold;
+}
+
+.FAQ_answer::before {
+    content: "A: ";
+    font-weight: bold;
+}
+
+.*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.css-shapes-preview {
+    background-image: url(res/Profiles/ErinA.jpg);
+    position: relative;
+    height: 900px;
+    width: 900px;
+}
+
+.testBox {
+/*    width: 100px;*/
+/*
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+*/
+}
+
+.flexRow {
+    width:100%;
+}
+.testBox {
+    width:100%;
+}
+
+.css-shapes-preview:nth-child(3) {
+    background-color: beige;
+}
+
+.css-shapes-preview:nth-child(2) {
+    background-color: purple;
+}
+
+.css-shapes-preview:first-child {
+    background-color: blue;
+}
+.last-row {
+    background-color: aqua;
+    
+}
+.dont {
+    visibility: hidden;
+}
+
+.margin-top {
+    margin-top: 500px;
 }

@@ -3,6 +3,8 @@
 $(document).ready(function () {
     $(".retro_title").lettering();
     generateProfiles();
+    generateFAQ();
+    initializeSlider();
 });
 
 $(document).ready(function () {
@@ -39,21 +41,21 @@ jQuery(function () {
             this.hasScrolledClass = false;
         }
     }
-    
+
     navBar.init([$(".slide_bar_container"), $(".navbar")]);
-    
+
     function scrollManager() {
         var scrollThreshold = 400;
         var yOffset = 0;
         var currYOffset = window.pageYOffset;
-        if(yOffset + scrollThreshold < currYOffset) {
+        if (yOffset + scrollThreshold < currYOffset) {
             navBar.add();
         } else {
             navBar.remove();
         }
     }
-    
-    window.onscroll = function(e) {
+
+    window.onscroll = function (e) {
         scrollManager();
     }
 });
@@ -128,6 +130,26 @@ function bioSwapEventHandler() {
     $($description).find(".bio_content_description").css("background-color", $(this).find(".bio_button").css("border-color"));
     $($description).find(".bio_content_picture_container").css("border-color", $(this).find(".bio_button").css("border-color"));
     console.log($($description).find(".bio_content_picture"));
-    
+
     $($description).find(".bio_content_picture").addClass("flipInY");
+}
+
+function generateFAQ() {
+    var $genericFAQ = $(".FAQ_question_container").detach();
+    let $FAQQuestionsList = $(".FAQ_questions_list");
+
+    $.each(faq_data.questions, function (index, question) {
+        let $newFAQ = $genericFAQ.clone(true, true, true);
+        $newFAQ.find("p.FAQ_question").text(question.question);
+        $newFAQ.find("p.FAQ_answer").text(question.answer);
+        $FAQQuestionsList.append($newFAQ);
+    })
+}
+
+function initializeSlider() {
+    $('.test').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        arrows: true
+    });
 }

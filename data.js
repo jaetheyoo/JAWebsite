@@ -52,12 +52,26 @@ var global_data = {
             color: "#dodgerblue"
         },
         {
-            name: "filler",
-//            position: "Teacher Coordinator",
-//            funTitle: "Hmmm... Yes....",
-//            description: "Somebody once told Mike the world was gonna roll him. That he wasn’t the sharpest tool in the shed. They were looking kind of dumb with their finger and their thumb in the shape of an “L” on their forehead. ……...Hey Now ",
-//            imgPath: "./res/profiles/MikeM.jpg",
-//            color: "#028090"
+            name: "filler"
         },
+    ]
+}
+
+var faq_data = {
+    questions: [
+        {
+            question: "Do I need to bring a partner?",
+            answer: "Nope! You don't need to bring a partner for neither the lessons nor the social dance."
+        }, {
+            question: "Do I need to have previous dance experience?",
+            answer: "Nope, we love first-timers at Jazz Attack! Make sure you come at 8 for our drop-in lesson, where you'll learn everything you need for your first night of dancing."
+        },
+        {
+            question: "Someone is making me feel uncomfortable. Is there someone I can talk to?",
+            answer: "We're so sorry to hear that. Jazz Attack is a safe space, and we have a dedicated Safe Spaces coordinator who is always available to help."
+        }, {
+            question: "Are there any discounts?",
+            answer: "There are two options for those looking to save. 1. If you volunteer, you can get in for free! 2. We have monthly packages: if you pay upfront for a month, you get a week free!"
+        }
     ]
 }
