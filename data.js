@@ -61,14 +61,20 @@ var faq_data = {
     questions: [
         {
             question: "Do I need to bring a partner?",
-            answer: "Nope! You don't need to bring a partner for neither the lessons nor the social dance."
+            answer: "You don't need to bring a partner for neither the lesson nor the social dance. There will be rotations during the lesson so you can practice dancing with different folks. Swing is a social dance, and we encourage everyone to ask anyone to dance! Don't have a partner for a song? Show off your solo jazz!"
         }, {
             question: "Do I need to have previous dance experience?",
-            answer: "Nope, we love first-timers at Jazz Attack! Make sure you come at 8 for our drop-in lesson, where you'll learn everything you need for your first night of dancing."
+            answer: "No prior experience is needed, we love welcoming first-timers to Jazz Attack! Make sure you come at 8:00PM for our drop-in lesson, where you'll learn everything you need for your first night of dancing."
+        }, {
+            question: "What should I wear?",
+            answer: "We recommend wearing clothes you're comfortable moving in. Casual attire is perfectly fine, although many people like to dress up for band nights and other special events. Close-toed shoes are highly recommended, especially those with low traction (swing has lots of spins and turns)."
+        }, {
+            question: "Do you offer private lessons?",
+            answer: "Yes, privates are a great way to level up your dancing, iron out some kinks, or learn new moves. Our space is open before lessons, from 7-8:00PM for private instruction. There are also opportunities to take privates on the weekends. If you're interested, talk to any instructor at Jazz Attack and they will work with you to schedule a time to meet and practice. Rates are up to the individual instructor, but most are flexible and sensitive to everyone's unique situation."
         },
         {
-            question: "Someone is making me feel uncomfortable. Is there someone I can talk to?",
-            answer: "We're so sorry to hear that. Jazz Attack is a safe space, and we have a dedicated Safe Spaces coordinator who is always available to help."
+            question: "Someone is making me feel uncomfortable, what should I do?",
+            answer: "Jazz Attack is a safe space, and we have a dedicated Safe Spaces coordinator who is always available to help. If someone is making you uncomfortable on the dance floor, please let an organizer know ASAP. Refer to our Safe Spaces page for a look at our Safe Spaces Policy and for ways to get in touch with our Safe Spaces Coordinator."
         }, {
             question: "Are there any discounts?",
             answer: "There are two options for those looking to save. 1. If you volunteer, you can get in for free! 2. We have monthly packages: if you pay upfront for a month, you get a week free!"
